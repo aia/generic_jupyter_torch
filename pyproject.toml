@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "generic"
+version = "0.1.0"
+description = ""
+authors = ["Artem Veremey <artem@veremey.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mypy = "^0.991"
+pytest = "^7.2.1"
+pycodestyle = "^2.10.0"
+pylint = "^2.16.1"
+black = "^23.1.0"
+bandit = "^1.7.4"
+debugpy = "1.6.4"
+jupyter = "^1.0.0"
+matplotlib = "^3.6.3"
+poethepoet = "^0.18.1"
+setuptools = "^67.1.0"
+wheel = "^0.38.4"
+
+[tool.poe.tasks.install_torch]
+cmd = "conda install -c pytorch -c conda-forge pytorch=1.13.1"
+help = "Install PyTorch with Conda"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

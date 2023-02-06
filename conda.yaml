@@ -1,0 +1,8 @@
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch=1.13.1
+  - jupyter
+  - matplotlib
