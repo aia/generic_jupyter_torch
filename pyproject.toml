@@ -19,6 +19,8 @@ matplotlib = "^3.6.3"
 poethepoet = "^0.18.1"
 setuptools = "^67.1.0"
 wheel = "^0.38.4"
+pandas = "^1.5.3"
+sympy = "^1.11.1"
 
 [tool.poe.tasks.install_torch]
 cmd = "conda install -c pytorch -c conda-forge pytorch=1.13.1"
